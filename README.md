@@ -1,25 +1,48 @@
-# pdf-to-chatgpt
+# OpenAI-GPT3-PDF-Question-Answering
 
-PDF Question Answering System with OpenAI's GPT-3
-This Python script is a Question Answering system, powered by OpenAI's GPT-3 language model. It reads a PDF file, extracts the text, and uses the text as a basis for answering questions about the content of the file.
+This repository contains a Python script that implements a Question Answering (QA) system. It is powered by OpenAI's GPT-3 and PyPDF2 for PDF manipulation. 
 
-Features
-PDF Parsing: It uses PyPDF2 to read the PDF file and extract the text content.
+## Description
 
-Question Answering: It utilizes OpenAI's GPT-3 model to answer questions about the text content. The user can ask questions via the command line.
+The script reads a PDF file, extracts the text, and uses this extracted text as a knowledge base for the GPT-3 model. Users can then interact with the model by asking questions related to the contents of the PDF file. The script leverages the `text-davinci-003` engine from OpenAI for generating responses. 
 
-How to Use
-PDF File: Update the pdf_path variable with the path to the PDF file you want to use.
+## Getting Started
 
-Ask Questions: Run the script and enter your questions. Each question is handled line by line. When you are finished with your question, enter '.' on a new line and press enter to finish.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Review Answers: The generated answer from the GPT-3 model will be printed to the console.
+### Prerequisites
 
-Please note, to use this script you will need to install the openai and PyPDF2 packages, and also you will need to provide your own OpenAI API key.
+You need Python 3.x and the following packages installed:
+- `openai`
+- `PyPDF2`
 
-Requirements
-PyPDF2
-openai
-Please remember to respect OpenAI's use-case policy while using this script.
+### Installation
 
-This code is provided as-is, and it is free to be used and modified. The author holds no responsibility for how it is used.
+1. Clone the repository: 
+    ```
+    git clone https://github.com/YourUsername/OpenAI-GPT3-PDF-Question-Answering.git
+    ```
+2. Navigate into the directory:
+    ```
+    cd OpenAI-GPT3-PDF-Question-Answering
+    ```
+3. Install the required packages: 
+    ```
+    pip install -r requirements.txt
+    ```
+4. Place your PDF file in the same directory as the script.
+
+5. Run the script and interact with the model by asking questions in the command line:
+    ```
+    python script.py
+    ```
+
+## Usage
+
+While the script is running, enter your questions one at a time in the console. To end the question session, simply input a single period character (`.`) and press Enter.
+
+### Example
+
+```shell
+Enter your question (enter '.' on a new line to finish):
+Who is the author of the document?
