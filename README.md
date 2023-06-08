@@ -20,7 +20,7 @@ You need Python 3.x and the following packages installed:
 
 1. Clone the repository: 
     ```
-    git clone https://github.com/YourUsername/OpenAI-GPT3-PDF-Question-Answering.git
+    git clone https://github.com/atef1995/OpenAI-GPT3-PDF-Question-Answering.git
     ```
 2. Navigate into the directory:
     ```
